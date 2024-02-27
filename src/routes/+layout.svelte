@@ -3,9 +3,9 @@
 <a href="/" class="nav-logo" title="Back to Homepage">Имя Фамилия</a>
 <div class="nav-links">
 
-    {#if link.isShow}
-        <a href={link.href} class="link">{link.title}</a>
-    {/if}
+{#each nav as link }
+   <a href={lnik.href} class="link">{link.title}</a> 
+{/each}
 
 </div>
 </div>
@@ -21,28 +21,23 @@
     const nav = [
         {
             title:'Обо мне',
-            href: '/about',
-            isShow: true,
+            href: '/about'
         },
         {
             title:'Блог',
-            href: '/blog',
-            isShow: true,
+            href: '/blog'
         },
         {
             title:'Портфолио',
-            href: '/project',
-            isShow: true,
+            href: '/project'
         },
         {
             title:'Контакты',
-            href: '/contact',
-            isShow: true,
+            href: '/contact'
         },
         {
             title:'temp',
-            href: '/temp',
-            isShow: false,
+            href: '/temp'
         },
     ]
 </script>
