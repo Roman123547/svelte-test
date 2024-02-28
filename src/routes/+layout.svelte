@@ -3,20 +3,18 @@
 <a href="/" class="nav-logo" title="Back to Homepage">Имя Фамилия</a>
 <div class="nav-links">
 
-    <!-- svelte-ignore missing-declaration -->
-    {#if link.isShow}
+    {#each nav as link}
 
-<!-- svelte-ignore missing-declaration -->
-<a href={link.href} class="link">{link.title}</a>
-
-{/if}
+    <a href={link.href} class="link">{link.title}</a>
+    
+    {/each}
 </div>
 </div>
 </nav>
 
 
 <div class="container">
-<!-- Pages will be injected below -->
+
 <slot></slot>
 </div>
 
