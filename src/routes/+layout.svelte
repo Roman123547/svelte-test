@@ -3,10 +3,10 @@
 <a href="/" class="nav-logo" title="Back to Homepage">Имя Фамилия</a>
 <div class="nav-links">
 
-    <!-- svelte-ignore missing-declaration -->
+    
     {#if link.isShow}
 
-<!-- svelte-ignore missing-declaration -->
+
 <a href={link.href} class="link">{link.title}</a>
 
 {/if}
@@ -16,7 +16,7 @@
 
 
 <div class="container">
-<!-- Pages will be injected below -->
+
 <slot></slot>
 </div>
 
