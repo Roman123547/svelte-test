@@ -1,6 +1,7 @@
 <svelte:head>
 <title>Портфолио</title>
 </svelte:head>
+
 <div class='container'>
 <h1>Мои проекты</h1>
 <div class='apps'>
@@ -25,7 +26,10 @@
     </script>
 
 <style>
-    .container { margin: 50px auto; max-width: 800px; padding: 0 20px; }
+    .container { margin: 50px auto; 
+        max-width: 800px; 
+        padding: 0 20px; 
+    }
     .apps {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -36,6 +40,6 @@
     padding: 10px;
     box-shadow: 0 0 10px #eee;
     }
-    link {
+    .link {
     color: rgb(10, 10, 139); }
     </style>
